@@ -16,24 +16,42 @@ public class Demo {
 		EntityManager em=emf.createEntityManager();
 		
 		// Transient State / New State
-		Student st=new Student(6, "Keyur", "ahmedabad");
+		Student st=new Student("Aman", "Ahmedabad");
+		Student s2=new Student("Keyur", "Baroda");
 		
 		// Persisitence State
 		em.getTransaction().begin();
 		
 		em.persist(st);
+		em.persist(s2);
 		em.getTransaction().commit();
 		
 		// Detached State
 
-		// em.close();
-		em.getTransaction().begin();
+//		// em.close();
+//		em.getTransaction().begin();
+//		
+//		st.setCity("anand");
+//		
+//		em.getTransaction().commit();
 		
-		st.setCity("anand");
-		
-		em.getTransaction().commit();
 		
 		
+//		try {
+//			em.getTransaction().begin();
+//		        // checking availability
+//			    // payment
+//			    // booking confirmation
+//			    // email sending of ticket - For email Sending
+//			
+//			em.getTransaction().commit();
+//		}
+//		catch(Exception ex) {
+//			em.getTransaction().rollback();
+//		}
+//		finally {
+//			em.close();
+//		}
 
 //		// Retrieve
 //		Student st=em.find(Student.class, 2);
