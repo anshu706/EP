@@ -34,7 +34,8 @@ public class Main {
 			System.out.println(set.getString("name"));
 		}
 		
-		// Good practice: Close the connection resource
 		conn.close();
 	}
 }
+
+// \connect root@localhost:3306
