@@ -17,7 +17,7 @@ public class Main {
 		}
 		
 		// step 3
-		String url = "jdbc:mysql://localhost:3306/parul";
+		String url = "jdbc:mysql://localhost:3306/your_database_name";
 		Connection conn = DriverManager.getConnection(url, "root", "your_database_password");
 						
 		// Statement st = conn.createStatement();
