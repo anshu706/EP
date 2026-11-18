@@ -18,7 +18,7 @@ public class Main {
 		
 		// step 3
 		String url = "jdbc:mysql://localhost:3306/parul";
-		Connection conn = DriverManager.getConnection(url, "root", "ansh2712");
+		Connection conn = DriverManager.getConnection(url, "root", "your_database_password");
 						
 		// Statement st = conn.createStatement();
 		// st.executeUpdate("Insert into Students values(2, 'ansu','u')");
